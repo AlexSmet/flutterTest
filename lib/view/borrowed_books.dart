@@ -3,7 +3,6 @@ import 'package:bookstore/view/free_books.dart';
 import 'package:bookstore/view_model/book_vm.dart';
 import 'package:bookstore/view_model/borrowed_books_vm.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 
 final class BorrowedBooks extends StatelessWidget {
   const BorrowedBooks({super.key});
@@ -26,7 +25,7 @@ final class BorrowedBooks extends StatelessWidget {
                 return ListTile(
                   title: Text(itemViewModel!.name),
                   trailing: TextButton(
-                    onPressed: itemViewModel!.onTapButton,
+                    onPressed: itemViewModel.onTapButton,
                     child: Text(itemViewModel.buttonText),
                   ),
                 );

@@ -29,7 +29,7 @@ final class FreeBooks extends StatelessWidget {
                   return ListTile(
                     title: Text(itemViewModel!.name),
                     trailing: TextButton(
-                      onPressed: itemViewModel!.onTapButton,
+                      onPressed: itemViewModel.onTapButton,
                       child: Text(itemViewModel.buttonText),
                     ),
                   );
